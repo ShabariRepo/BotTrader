@@ -1,0 +1,5 @@
+ib_insync
+psycopg2-binary
+python-dotenv
+pandas
+numpy

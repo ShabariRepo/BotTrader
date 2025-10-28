@@ -1,4 +1,10 @@
+import sys
+import os
 import pandas as pd
+
+# Fix import path so we can load from /strategies
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from strategies import strategy_diagonal, strategy_sr, strategy_schoolrun
 
 def load_mock_data(symbol):
